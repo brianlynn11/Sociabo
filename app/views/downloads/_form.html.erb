@@ -1,0 +1,21 @@
+<%= form_for(@download) do |f| %>
+  <% if @download.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@download.errors.count, "error") %> prohibited this download from being saved:</h2>
+
+      <ul>
+      <% @download.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :contact %><br />
+    <%= f.text_field :contact, "onfocus" => "this.value=''; this.onfocus=null;" %>
+  </div>
+  <div class="actions">
+    <%= f.submit "Create Download", :type => :image, :src => "/assets/submit.png" %>
+  </div>
+<% end %>

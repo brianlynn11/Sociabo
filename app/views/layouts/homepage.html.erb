@@ -1,0 +1,222 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<html>
+<head>
+  <title>Sociabo - The Better Way to Meet People</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="description" content="" />
+	<meta property="og:title" content="Sociabo - The Better Way to Meet New People" />
+	<meta property="og:type" content="company" />
+	<meta property="og:url" content="http://www.sociabo.com" />
+	<meta property="og:image" content="http://www.2novatech.com/images/fb_thumb.jpg" />
+	<meta property="og:site_name" content="Sociabo" />
+	<meta property="fb:admins" content="9102604" />
+  <%= stylesheet_link_tag    "homepage", :media => "all" %>
+  <%= stylesheet_link_tag    "jquery.fancybox-1.3.1", :media => "all" %>
+  <%= javascript_include_tag "jquery" %>
+  <%= javascript_include_tag "jquery.scroll" %>
+  <%= javascript_include_tag "jquery.serialScroll" %>
+  <%= javascript_include_tag "jquery.tools" %>
+  <%= javascript_include_tag "main" %>
+  <script type="text/javascript" src="http://malsup.github.com/jquery.cycle.all.js"></script>
+  <%= csrf_meta_tags %>
+
+	<script>
+	$(document).ready(function(){
+		$('#slider').cycle('fade');
+	});
+	</script>
+
+</head>
+<body>
+
+	<div id="top_content_wrap"> <!-- Start App Description -->
+		<div id="top_content" class="page">
+			<div id="app_screenshot"> <!-- Start App Screencast -->
+				<div id="slider">
+					<%= image_tag "screen1.png" %>
+					<%= image_tag "screen2.png" %>
+					<%= image_tag "screen3.png" %>
+				</div>						
+			
+				<!--<div class="screencast">
+					<iframe src="http://player.vimeo.com/video/14500965?title=0&amp;byline=0&amp;portrait=0" width="195" height="291" frameborder="0"></iframe>
+				</div>-->
+			</div> <!-- End App Screencast -->
+		
+			<div id="app_description"> <!-- Start App Description -->
+				<div class="header">
+					<h1>Sociabo</h1>
+					<div class="version">Beta</div>
+					<div class="clear"></div>
+				</div>
+				<div class="slogan"></div>
+				<p>Sociabo is a new social experience: fast, fun and safe way to connect with new people or friends at great places in the real world.</p>			
+				<div class="actions">
+					<%= image_tag "getapp.png" %>
+
+					<%= yield %>
+
+					<a href="http://itunes.apple.com/us/app/sociabo/id529663476?mt=8" class="app_store">Sociabo</a>
+					<div class="clear"></div>
+				</div>
+			</div> <!-- End App Description -->
+			<div class="clear"></div>
+		</div>
+	</div>
+	
+	<div id="page_seperator"></div>
+	
+	<div id="bottom_content" class="page panes">
+		
+		<div id="home" class="pane"> <!-- Start Homepage -->
+			
+			<div id="features"> <!-- Start Features -->
+				<div class="feature">
+					<div class="new"></div>
+					<div class="content">
+						<div class="screenshot">
+							<%= image_tag "feature_1.jpg" %>
+						</div>
+						<p>1. Get connected to other groups of interesting people nearby based on mutual connections.</p>
+					</div>				
+					<div class="bottom"></div>
+				</div>
+				<div class="feature">
+					<div class="content">
+						<div class="screenshot">
+							<%= image_tag "feature_2.jpg" %>
+						</div>
+						<p>2. Say which friends you're bringing, and propose a hangout nearby with another group.</p>
+					</div>				
+					<div class="bottom"></div>
+				</div>
+				<div class="feature last">
+					<div class="content">
+						<div class="screenshot">
+							<%= image_tag "feature_3.jpg" %>
+						</div>
+						<p>3. Meet and socialize face-to-face in minutes, with great choices of venues.</p>
+					</div>				
+					<div class="bottom"></div>
+				</div>
+				<div class="clear"></div>
+			</div> <!-- End Features -->
+		
+			<div id="reviews_faqs">
+			
+				<div id="reviews"> <!-- Start Reviews -->
+					<div class="review">
+						<p>Installed in seconds and works perfectly, never experienced any bugs or errors when using.</p>
+						<span>- Some Guy <a href="#">someguy.com</a></span>
+					</div>
+					<div class="review">
+						<p>Installed in seconds and works perfectly, never experienced any bugs or errors when using.</p>
+						<span>- Some Girl <a href="#">somegirl.com</a></span>
+					</div>
+					<div class="review">
+						<p>Installed in seconds and works perfectly, never experienced any bugs or errors when using.</p>
+						<span>- Some Guy <a href="#">someguy.com</a></span>
+					</div>
+					<!-- Add more reviews here -->
+				</div> <!-- End Reviews -->
+			
+				<div id="faqs"> <!-- Start FAQs -->
+					<div class="left_column">
+						<div id="fb-root"></div>
+						<script>(function(d, s, id) {
+						  var js, fjs = d.getElementsByTagName(s)[0];
+						  if (d.getElementById(id)) return;
+						  js = d.createElement(s); js.id = id;
+						  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=188002751263174";
+						  fjs.parentNode.insertBefore(js, fjs);
+						}(document, 'script', 'facebook-jssdk'));</script>
+						<div id="likebox-frame">
+							<div class="fb-like-box" data-href="http://www.facebook.com/sociabo" data-width="570" data-height="330" data-show-faces="true" data-stream="false" data-header="false"></div>
+						</div>
+					</div>
+					<div class="clear"></div>
+				</div> <!-- End FAQs -->
+			
+				<div class="clear"></div>
+			
+			</div>
+		</div> <!-- End Homepage -->
+		
+				<div id="about" class="pane"> <!-- Start About Page -->
+			<div class="left">
+				<h2>The Fun, Real Life Social Tool</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</div>
+
+			<div class="right">
+				<h2>The Team</h2>
+				<ul>
+					<li>
+						<%= image_tag "team_member.jpg" %>
+						<h3>Brian Lynn</h3>
+						<span>Cofounder & CEO</span>
+					</li>
+					<li>
+						<%= image_tag "team_member.jpg" %>
+						<h3>Nick Hays</h3>
+						<span>Cofounder & CTO</span>
+					</li>
+					<!-- Add more team members here -->
+				</ul>
+			</div>
+			<div class="clear"></div>
+		</div> <!-- End About Page -->
+
+		<div id="privacy" class="pane"> <!-- Start Privacy Page -->
+			<div class="left">
+				<h2>Privacy Policy</h2>
+					<p>By accessing the website at http://Sociabo.com (“Sociabo Site”) or any Sociabo mobile application (e.g., Sociabo iOS or Sociabo Facebook) (“Sociabo App”) (collectively, the “Sociabo Service”), which are provided by Sociabo LLC (“Sociabo”), you expressly consent to the collection, use and disclosure of your Personal Data (as defined below) in accordance with this privacy policy (“Privacy Policy”). We have prepared this Privacy Policy to describe to you our practices regarding the Personal Data we collect from users of the Sociabo Service. Capitalized terms not defined in this Privacy Policy have the meanings given in our Terms of Service located at http://Sociabo.com/terms-of-service
+	1. A Note About Minors. The Sociabo Service is intended for users 18 years and older only. We do not intentionally gather Personal Data about visitors who are under the age of 18.
+	2. A Note To Users Outside Of The United States. Your Personal Data may be processed in the country in which it was collected and in other countries, including the United States, where laws regarding processing of Personal Data may be less stringent than the laws in your country.
+	3. Types Of Data We Collect. “Personal Data” means data that allows someone to identify or contact you, including, for example, your name, address, telephone number, e-mail address, as well as any other non-public information about you that is associated with or linked to any of the foregoing data. “Anonymous Data” means data that is not associated with or linked to your Personal Data; Anonymous Data does not, by itself, permit the identification of individual persons. We collect Personal Data and Anonymous Data as described below.
+	3.1 Data You Provide to Us.</p>
+			</div>
+			<div class="clear"></div>
+		</div> <!-- End Privacy Page -->
+		
+	</div>
+	
+	<div id="footer" class="page"> <!-- Start Footer -->
+	
+		<div class="top">
+			<a href="http://itunes.apple.com/us/app/sociabo/id529663476?mt=8">
+				<%= image_tag "app_store_small.gif" %>
+			</a>
+
+			<ul>
+				<li class="twitter"><a href="http://twitter.com/#!/Sociabo">Twitter</a></li>
+				<li class="facebook"><a href="http://www.facebook.com/sociabo">Facebook</a></li>
+			</ul>
+			<div class="clear"></div>
+		</div>
+		
+		<div class="bottom">
+			<div id="nav"> <!-- Start Page Navigation -->
+				<ul class="tabs">
+					<li><a href="#home">Home</a></li>
+					<li><a href="#about">Our Story</a></li>
+					<li><a href="#privacy">Privacy</a></li>
+					<li><a href="#terms">Terms</a></li>
+					<li><a href="http://blog.sociabo.com/" target="_blank">Blog</a></li>
+					<li><a href="http://support.sociabo.com/" target="_blank">Support</a></li>
+					<li><a href="mediakit.zip">Media Kit</a></li>					
+				</ul>
+				<div class="clear"></div>
+			</div> <!-- End Page Navigation -->
+		
+			<p>Copyright &copy; 2012 Sociabo, Inc.</p>
+			<div class="clear"></div>
+		</div>
+		
+	</div> <!-- End Footer -->
+
+</body>
+</html>
